@@ -1,0 +1,27 @@
+{
+  "name": "vuejs",
+  "version": "1.0.0",
+  "description": "a vuejs skeleton",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremielenoir/vuejs-flux-implementation.git"
+  },
+  "keywords": [
+    "vuejs",
+    "webpack"
+  ],
+  "author": "lenoir jérémié",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeremielenoir/vuejs-flux-implementation/issues"
+  },
+  "homepage": "https://github.com/jeremielenoir/vuejs-flux-implementation#readme",
+  "dependencies": {
+    "vue": "^2.5.13",
+    "webpack": "^3.11.0"
+  }
+}
