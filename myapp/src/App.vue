@@ -11,10 +11,10 @@
         <a class="nav-link" href="#/" >TodoList</a>
       </li>
       <li class="nav-item" @click="activate(2)" :class="{ active: isActive == 2}">
-        <a class="nav-link" href="#/page1" >Features</a>
+        <a class="nav-link" href="#/axios" >Axios</a>
       </li>
       <li class="nav-item" @click="activate(3)" :class="{ active: isActive == 3}">
-        <a class="nav-link" href="#/contact" >Pricing</a>
+        <a class="nav-link" href="#/contact" >Contact</a>
       </li>
     </ul>
     </div>
@@ -24,7 +24,6 @@
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
   </form>
 </nav>
-    <h1>Todo List</h1>
     <router-view/>
   </div>
 </template>
@@ -32,7 +31,6 @@
 <script>
 export default {
   name: 'App',
-  el: '#app',
   data () {
     return {
       isActive: 0

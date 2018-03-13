@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import TodoList from '@/components/TodoList'
-import Page1 from '@/components/Page1'
+import Axios from '@/components/Axios'
 import Contact from '@/components/Contact'
 
 Vue.use(Router)
@@ -14,9 +14,9 @@ export default new Router({
       component: TodoList
     },
     {
-      path: '/page1',
-      name: 'Page1',
-      component: Page1
+      path: '/axios',
+      name: 'Axios',
+      component: Axios
     },
     {
       path: '/contact',
