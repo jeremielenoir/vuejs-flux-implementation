@@ -1,13 +1,38 @@
 <template>
   <div class="hello">
-    <input type="text" v-model="newTodoText" v-on:keyup.enter="addNewTodo">
-    <button v-on:click="addNewTodo">Ajouter</button>
-    <ul>
-      <li v-for="(todo,key) in todos" v-bind:key="key">
-        {{ todo.id }} : {{ todo.title }}
-        <button v-on:click="todos.splice(index,1)">x</button>
-      </li>
-  </ul>
+    <div class="container">
+      <div class="input-group mb-3">
+  <input 
+    type="text"
+    class="form-control"
+    placeholder="add tasks" 
+    aria-label="Recipient's username" 
+    aria-describedby="basic-addon2"
+    v-model="newTodoText" 
+    v-on:keyup.enter="addNewTodo" 
+    >
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" v-on:click="addNewTodo">Ajouter</button>
+  </div>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Tasks</th>
+      <th scope="col">Button</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr v-for="(todo,key) in todos" v-bind:key="key">
+      <th scope="row">{{ todo.id }}</th>
+      <td>{{ todo.title }}</td>
+      <td><button v-on:click="todos.splice(index,1)" class="btn btn-outline-danger">x</button></td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+  
   </div>
 </template>
 
