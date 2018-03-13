@@ -2,14 +2,14 @@
   <div class="hello">
     <div class="container">
       <div class="input-group mb-3">
-  <input 
+  <input
     type="text"
     class="form-control"
-    placeholder="add tasks" 
-    aria-label="Recipient's username" 
+    placeholder="add tasks"
+    aria-label="Recipient's username"
     aria-describedby="basic-addon2"
-    v-model="newTodoText" 
-    v-on:keyup.enter="addNewTodo" 
+    v-model="newTodoText"
+    v-on:keyup.enter="addNewTodo"
     >
   <div class="input-group-append">
     <button class="btn btn-outline-secondary" type="button" v-on:click="addNewTodo">Ajouter</button>
@@ -32,7 +32,6 @@
   </tbody>
 </table>
   </div>
-  
   </div>
 </template>
 
