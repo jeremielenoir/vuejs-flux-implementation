@@ -10,7 +10,6 @@
 <script>
 import Vue from 'vue'
 
-
 Vue.component('button-counter', {
   template: '<button v-on:click="incrementCounter">{{ counter }}</button>',
   data: function () {
@@ -23,7 +22,7 @@ Vue.component('button-counter', {
       this.counter += 1
       this.$emit('increment')
     }
-  },
+  }
 })
 
 new Vue({
